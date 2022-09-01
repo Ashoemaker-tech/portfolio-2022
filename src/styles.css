@@ -4,4 +4,34 @@
 
 body {
   background-color: #12181b;
+  color: #fff;
+
+}
+
+.grad-text {
+  background: -webkit-linear-gradient(45deg, #fa8043, #ff4187);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  background-color: #2a2e35;
+  border: none;
+}
+
+.card-img-top {
+  height: 14rem;
+  object-fit: cover;
+}
+
+
+/* hide verticle scroll bar */
+/* chrome, Safari, Opera */
+body::-webkit-scrollbar { 
+  width: 0 !important; 
+}
+
+/* mozilla */
+body {
+  overflow:  -moz-scrollbars-none;
 }

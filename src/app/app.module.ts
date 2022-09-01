@@ -8,6 +8,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { BlogComponent } from './pages/blog/blog.component';
     FooterComponent,
     HeroComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    ShowcaseComponent,
+    PostsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <app-hero></app-hero>
+    <app-showcase></app-showcase>
+    <app-contact></app-contact>
   `,
   styles: [
   ]
