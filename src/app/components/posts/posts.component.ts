@@ -3,16 +3,30 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-posts',
   template: `
-    <div class="album">
-      <div class="card" style="width: 20rem;">
-        <img src="https://via.placeholder.com/300" class="card-img-top"  alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title">Post One</h5>
-          <p class="text-small">Jan. 1, 2022</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class=" my-3 album row row-cols-1 row-cols-md-2">
+        <div class="col">
+          <div class="card text-bg-dark mt-5">
+            <img src="https://via.placeholder.com/300" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-bg-dark mt-5">
+            <img src="https://via.placeholder.com/300" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
   `,
   styles: [
   ]

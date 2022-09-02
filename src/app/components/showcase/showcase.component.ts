@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-showcase',
   template: `
     <div class="container col-xxl-8 px-4 py-5">
-      <h3 class="my-4">Recent <span class="grad-text">Projects</span></h3>
-      <div class="card py-3">
+      <h3 class="my-5">Recent <span class="grad-text">Projects</span></h3>
+      <div class="card py-3 my-5">
         <div class="card-body d-flex align-items-center">
           <div>
             <a class="text-light" href="#"><i class="fa-solid fa-desktop temp-icon"></i></a>
@@ -23,8 +23,8 @@ import { Component, OnInit } from '@angular/core';
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-between">
-        <h3 class="text-light my-4">Recent <span class="grad-text">Posts</span></h3>
+      <div class="d-flex mt-5 pt-5 align-items-center justify-content-between">
+        <h3 class="text-light">Recent <span class="grad-text">Posts</span></h3>
         <a class="text-light text-decoration-none" routerLink="/blog">View All Posts <i class="fa-solid fa-arrow-right-long"></i></a>
       </div>
       <app-posts></app-posts>
