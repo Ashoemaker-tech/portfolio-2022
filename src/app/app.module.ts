@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AdminPostsComponent } from './pages/admin/admin-posts/admin-posts.component';
+import { AdminAddPostsComponent } from './pages/admin/admin-add-posts/admin-add-posts.component';
+import { AdminViewPostsComponent } from './pages/admin/admin-view-posts/admin-view-posts.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +27,16 @@ import { ContactComponent } from './components/contact/contact.component';
     BlogComponent,
     ShowcaseComponent,
     PostsComponent,
-    ContactComponent
+    ContactComponent,
+    AdminPostsComponent,
+    AdminAddPostsComponent,
+    AdminViewPostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
