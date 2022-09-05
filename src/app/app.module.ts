@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AdminPostsComponent } from './pages/admin/admin-posts/admin-posts.component';
 import { AdminAddPostsComponent } from './pages/admin/admin-add-posts/admin-add-posts.component';
 import { AdminViewPostsComponent } from './pages/admin/admin-view-posts/admin-view-posts.component';
+import { BlogPostComponent } from './pages/blog/blog-post/blog-post.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AdminViewPostsComponent } from './pages/admin/admin-view-posts/admin-vi
     ContactComponent,
     AdminPostsComponent,
     AdminAddPostsComponent,
-    AdminViewPostsComponent
+    AdminViewPostsComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,

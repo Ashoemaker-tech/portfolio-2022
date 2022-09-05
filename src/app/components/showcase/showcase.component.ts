@@ -25,7 +25,6 @@ import { Component, OnInit } from '@angular/core';
       </div>
       <div class="d-flex mt-5 pt-5 align-items-center justify-content-between">
         <h3 class="text-light">Recent <span class="grad-text">Posts</span></h3>
-        <a class="text-light text-decoration-none" routerLink="/blog">View All Posts <i class="fa-solid fa-arrow-right-long"></i></a>
       </div>
       <app-posts></app-posts>
       
