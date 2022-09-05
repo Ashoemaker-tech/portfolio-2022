@@ -104,9 +104,9 @@ export class AdminAddPostsComponent implements OnInit {
   }
 
   onSubmit() : void {
-    this.blogService.addToggle = true
     this.blogService.addPost(this.post).subscribe( response => {
       this.router.navigate(['/admin'])
+      this.blogService.toggleText = 'Post Added';
     })
   }
 

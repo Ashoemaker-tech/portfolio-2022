@@ -1,6 +1,5 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Post } from 'src/app/models/Post.model';
 import { BlogService } from 'src/app/services/blog.service';
 
@@ -8,14 +7,9 @@ import { BlogService } from 'src/app/services/blog.service';
 @Component({
   selector: 'app-admin-posts',
   template: `
-    <div *ngIf="updateAlertToggle" class="alert alert-success d-flex justify-content-between" role="alert">
-      <div>Post Updated!</div>
-      <button type="button" class="btn-close" (click)="updateAlertToggle=false"></button>
-    </div>
-
-    <div *ngIf="addAlertToggle" class="alert alert-success d-flex justify-content-between" role="alert">
-      <div>Post Added!</div>
-      <button type="button" class="btn-close" (click)="addAlertToggle=false"></button>
+    <div *ngIf="alertToggle" class="alert alert-success d-flex justify-content-between" role="alert">
+      <div>{{ alertText }}</div>
+      <button type="button" class="btn-close" (click)="alertToggle=false"></button>
     </div>
 
     <div *ngIf="deleteAlertToggle" class="alert alert-danger d-flex justify-content-between" role="alert">
@@ -52,13 +46,19 @@ export class AdminPostsComponent implements OnInit {
 
   posts: Post[] = []
   post: any = []
-  updateAlertToggle: boolean = this.blogService.updateToggle;
-  addAlertToggle: boolean = this.blogService.addToggle;
+  alertText: string = ''
+  alertToggle: boolean = this.blogService.toggle;
   deleteAlertToggle: boolean = false;
 
-  constructor(private blogService: BlogService, private route: ActivatedRoute) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute,private router: Router) { }
 
   ngOnInit(): void {
+    if (this.blogService.toggleText != '') {
+      this.alertText = this.blogService.toggleText
+      if (this.deleteAlertToggle != true) {
+        this.alertToggle = true;
+      }
+    }
     this.blogService.getAllPosts().subscribe( response => {
       this.posts = response;
     })

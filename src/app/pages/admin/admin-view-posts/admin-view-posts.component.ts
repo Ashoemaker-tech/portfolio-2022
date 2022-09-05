@@ -61,7 +61,7 @@ import { BlogService } from 'src/app/services/blog.service';
         </div>
 
         <div class="mb-3">
-            <button class="btn btn-outline-light">Update</button>
+            <button class="btn btn-outline-success">Update</button>
            
         </div>
     </form>
@@ -119,9 +119,8 @@ export class AdminViewPostsComponent implements OnInit {
       updatedDate: this.post?.updatedDate,
       featuredImageUrl: this.post?.featuredImageUrl,
     }
-    this.blogService.updateToggle = true;
-
     this.blogService.updatePost(this.post?.id, updatePostRequest).subscribe( response => {
+      this.blogService.toggleText = 'Post Updated'
       this.router.navigate(['/admin'])
     })
   }

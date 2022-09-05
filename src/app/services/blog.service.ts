@@ -16,9 +16,8 @@ const httpOptions = {
 })
 export class BlogService {
   apiUrl = environment.apiUrl
-  deleteToggle: boolean = false
-  updateToggle: boolean = false
-  addToggle: boolean = false
+  toggle: boolean = false;
+  toggleText: string = '';
 
   constructor(private http: HttpClient) { }
 
