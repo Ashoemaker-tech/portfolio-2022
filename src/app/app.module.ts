@@ -9,7 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
-import { BlogComponent } from './pages/blog/blog.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -25,7 +25,7 @@ import { BlogPostComponent } from './pages/blog/blog-post/blog-post.component';
     FooterComponent,
     HeroComponent,
     HomeComponent,
-    BlogComponent,
+    ResumeComponent,
     ShowcaseComponent,
     PostsComponent,
     ContactComponent,

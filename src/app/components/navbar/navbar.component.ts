@@ -12,7 +12,7 @@ import { Router } from '@angular/router'
 
       <ul class="nav">
         <li class="nav-item"><a [class.grad-text]="hasRoute('/')" routerLink="/" class=" nav-link text-light" aria-current="page">Home</a></li>
-        <li class="nav-item"><a [class.grad-text]="hasRoute('/blog')" routerLink="/blog" class=" nav-link text-light">Blog</a></li>    
+        <li class="nav-item"><a [class.grad-text]="hasRoute('/resume')" routerLink="/resume" class=" nav-link text-light">Resume</a></li>    
       </ul>
     </header>
   `,
