@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-showcase',
@@ -14,20 +15,46 @@ import { Component, OnInit } from '@angular/core';
             <h5><a class="text-decoration-none h5 text-light" 
             [class.grad-text]="mouseovered" 
             (mouseover)="mouseovered=true" 
-            (mouseout)="mouseovered=false" href="#">Project One</a> 
+            (mouseout)="mouseovered=false" href="#">Dating App</a> 
               <span class="badge bg-danger mx-1">Angular</span>
               <span class="badge bg-primary mx-2">.NET Core</span>
-              <span class="badge bg-success mx-1">Blog</span>
             </h5>
-            <p class="card-text">Description about the project</p>
+            <p class="card-text">A dating app project that was built from the ground up with Angular .Net Core and Bootstrap for styling. This app implements full authentication on the backend and Angular route guards on the front end and it also has a full social media style post feed. Users can register, login create a profile with drag and drop image upload feature. Users can communitcate privately with messages, and like each others profiles. If both users like each others profiles then the users will show up in each others matches page.  </p>
           </div>
         </div>
       </div>
-      <div class="d-flex mt-5 pt-5 align-items-center justify-content-between">
-        <h3 class="text-light">Recent <span class="grad-text">Posts</span></h3>
+      <div>
+        <h3 class="text-light">Tech <span class="grad-text">Used</span></h3>
+        <div class=" mt-5 d-flex flex-wrap justify-content-around">
+          <!-- HTML -->
+          <img class="p-2" align="left" alt="HTML" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <!-- CSS -->
+          <img class="p-2" align="left" alt="CSS" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <!-- TypeScript -->
+          <img class="p-2" align="left" alt="TypeScript" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+          <!-- csharp -->
+          <img class="p-2" align="left" alt="csharp" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+          <!-- node -->
+          <img class="p-2" align="left" alt="node" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <!-- Angular -->
+          <img class="p-2" align="left" alt="angular" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+          <!-- dotNet -->
+          <img class="p-2" align="left" alt="dotNet" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+          <!-- Bootstrap -->
+          <img class="p-2" align="left" alt="bootstrap" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+          <!-- Tailwind -->
+          <img class="p-2" align="left" alt="tailwind" width="80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+          <!-- SqlServer -->
+          <img class="p-2" align="left" alt="SqlServer" width="90px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
+          <!-- Mysql -->
+          <img class="p-2" alt="mySql" width="90px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
+        </div>
       </div>
-      <app-posts></app-posts>
-      
+      <h3 class="text-light my-5">Recent <span class="grad-text">Posts</span></h3>
+      <div>
+        <app-post-card [postName]="postOne" [link]="linkOne"></app-post-card>
+        <app-post-card [postName]="postTwo" [link]="linkTwo"></app-post-card>
+      </div>
 
     </div>
   `,
@@ -47,6 +74,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowcaseComponent implements OnInit {
   mouseovered: boolean = false;
+  postOne:string = 'Why I chose Angular Over React';
+  linkOne: string = '/posts/post/test-one';
+  postTwo:string = 'Blog Two';
+  linkTwo:string = '/posts/post/test-two';
   constructor() { }
 
   ngOnInit(): void {

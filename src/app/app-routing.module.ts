@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminAddPostsComponent } from './pages/admin/admin-add-posts/admin-add-posts.component';
-import { AdminPostsComponent } from './pages/admin/admin-posts/admin-posts.component';
-import { AdminViewPostsComponent } from './pages/admin/admin-view-posts/admin-view-posts.component';
-import { BlogPostComponent } from './pages/blog/blog-post/blog-post.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'resume', component: ResumeComponent },
-  {path: 'admin', component: AdminPostsComponent},
-  {path: 'post/:id', component: BlogPostComponent},
-  {path: 'admin/posts/add', component: AdminAddPostsComponent},
-  {path: 'admin/posts/:id', component: AdminViewPostsComponent}
-
-
+  {path: 'posts/post/:article', component: PostsComponent },
 ];
 
 @NgModule({

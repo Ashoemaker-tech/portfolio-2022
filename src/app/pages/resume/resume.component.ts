@@ -40,11 +40,11 @@ import { Component, OnInit } from '@angular/core';
       <h2>Tech Stack</h2>
       <div id="wrapper--techstack__items">
         <div class="card--techstack">
-          <span>C#, JavaScript, PHP</span>
+          <span>C#, JavaScript</span>
         </div>
 
         <div class="card--techstack">
-          <span>.NET, Laravel</span>
+          <span>.NET, Node</span>
         </div>
 
         <div class="card--techstack">
@@ -52,7 +52,7 @@ import { Component, OnInit } from '@angular/core';
         </div>
 
         <div class="card--techstack">
-          <span>SQL Server, MySQL, Mongo DB</span>
+          <span>SQLite, SQL Server, MySQL</span>
         </div>
       </div>
     </section>
@@ -103,6 +103,10 @@ import { Component, OnInit } from '@angular/core';
       <h2>Education & Accomplishments</h2>
 
       <div class="card--project">
+        <p><span>🏆</span><a href="../../../assets/certificate_of_completion.pdf" target="_blank">W3Schools C# Certification | August 2022</a></p>
+      </div>
+
+      <div class="card--project">
         <p><span>🏆</span>University Of Phoenix AS Cyber Security | October 2023</p>
       </div>
 
@@ -124,7 +128,9 @@ import { Component, OnInit } from '@angular/core';
 
   </div>
   `,
-  styles: [``
+  styles: [`
+  
+  `
   ]
 })
 export class ResumeComponent implements OnInit {

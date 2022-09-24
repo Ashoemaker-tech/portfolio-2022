@@ -141,6 +141,22 @@ li {
   border-top: 1px solid var(--mainBorderColor);
 }
 
+.card--project a{
+  color: var(--secondaryTextColor);
+}
+
+.card--project a:hover{
+  background: -webkit-linear-gradient(45deg, #fa8043, #ff4187);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card--project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
+}
+
 
 /* Media Queries */
 
