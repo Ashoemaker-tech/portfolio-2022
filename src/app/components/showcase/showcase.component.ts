@@ -9,9 +9,6 @@ import { ActivatedRoute } from '@angular/router';
       <div class="card py-3 my-5">
         <div class="card-body d-flex align-items-center">
           <div>
-            <a class="text-light" href="#"><i class="fa-solid fa-desktop temp-icon"></i></a>
-          </div>
-          <div>
             <h5><a class="text-decoration-none h5 text-light" 
             [class.grad-text]="mouseovered" 
             (mouseover)="mouseovered=true" 
@@ -52,8 +49,8 @@ import { ActivatedRoute } from '@angular/router';
       </div>
       <h3 class="text-light my-5">Recent <span class="grad-text">Posts</span></h3>
       <div>
-        <app-post-card [postName]="postOne" [link]="linkOne"></app-post-card>
-        <app-post-card [postName]="postTwo" [link]="linkTwo"></app-post-card>
+        <app-post-card [postName]="postOneTitle" [link]="postOneUrl"></app-post-card>
+        <app-post-card [postName]="postTwoTitle" [link]="postTwoUrl"></app-post-card>
       </div>
 
     </div>
@@ -74,10 +71,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ShowcaseComponent implements OnInit {
   mouseovered: boolean = false;
-  postOne:string = 'Why I chose Angular Over React';
-  linkOne: string = '/posts/post/test-one';
-  postTwo:string = 'Blog Two';
-  linkTwo:string = '/posts/post/test-two';
+  // TODO Possibly create Post Model to hold these values? 
+  postOneTitle:string = 'Why I chose Angular Over React';
+  postTwoTitle:string = 'Blog Two';
+  postOneUrl: string = '/posts/post/test-one';
+  postTwoUrl:string = '/posts/post/test-two';
   constructor() { }
 
   ngOnInit(): void {

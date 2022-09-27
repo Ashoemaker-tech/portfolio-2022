@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
       </div>
       <div class="col-lg-6">
         <h1 class="display-6 fw-bold lh-1 mb-3">Hi there, I'm <span class="grad-text">Andrew</span> </h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <p class="lead">I am a full stack software developer that is based in the southestern United States. I specialize in building cutting edge, blazingly fast, pixel perfect web apps with Angular and .NET Core. </p>
         <div class="">
           <ul class="icons">
           <li><a href="https://www.linkedin.com/in/andrew-shoemaker-825847a6/" target="_blank"><span class="fab fa-linkedin text-light"></span></a></li>
