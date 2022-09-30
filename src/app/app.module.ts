@@ -16,6 +16,7 @@ import { SecurityContext } from '@angular/core';
 import { MarkdownModule } from 'ngx-markdown';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PostsComponent } from './components/posts/posts.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE })
+    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,8 @@ import { PostsComponent } from './components/posts/posts.component';
 const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'resume', component: ResumeComponent },
-  {path: 'posts/post/:article', component: PostsComponent },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+  {path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
