@@ -11,7 +11,7 @@ import { Component, Input, OnInit } from '@angular/core';
             (mouseover)="mouseovered=true" 
             (mouseout)="mouseovered=false" routerLink="{{link}}">{{postName}}</a> 
             </h5>
-            <p class="card-text">Blog Post</p>
+            <p class="card-text">{{description}}</p>
           </div>
         </div>
       </div>
@@ -25,8 +25,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostCardComponent implements OnInit {
   mouseovered: boolean = false;
-  @Input() postName: string = '';
+  @Input() postName: any = '';
   @Input() link: string = '';
+  @Input() description: any = '';
 
 
   constructor() { }

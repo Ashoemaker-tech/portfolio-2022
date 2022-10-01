@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
+import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-showcase',
@@ -48,9 +50,8 @@ import { ActivatedRoute } from '@angular/router';
         </div>
       </div>
       <h3 class="text-light my-5">Recent <span class="grad-text">Posts</span></h3>
-      <div>
-        <app-post-card [postName]="postOneTitle" [link]="postOneUrl"></app-post-card>
-        <app-post-card [postName]="postTwoTitle" [link]="postTwoUrl"></app-post-card>
+      <div *ngFor="let link of links$ | async">
+        <app-post-card [postName]="link.title" [link]="link.route" [description]="link.description"></app-post-card>
       </div>
 
     </div>
@@ -76,7 +77,13 @@ export class ShowcaseComponent implements OnInit {
   postTwoTitle:string = 'Blog Two';
   postOneUrl: string = '/posts/post/test-one';
   postTwoUrl:string = '/posts/post/test-two';
-  constructor() { }
+  links$: Observable<ScullyRoute[]> = this.scullyRoutes.available$.pipe(
+    map((routes) => {
+      return routes.filter((route: ScullyRoute) => route.title && route.published && route.route.startsWith('/blog/'))
+    })
+  )
+
+  constructor(public scullyRoutes: ScullyRoutesService) { }
 
   ngOnInit(): void {
   }
