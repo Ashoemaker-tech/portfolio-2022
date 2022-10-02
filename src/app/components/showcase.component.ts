@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { map, Observable } from 'rxjs';
+import { Post } from '../models/post.model';
+import { BlogService } from '../services/blog.service';
 
 @Component({
   selector: 'app-showcase',
@@ -50,8 +51,8 @@ import { map, Observable } from 'rxjs';
         </div>
       </div>
       <h3 class="text-light my-5">Recent <span class="grad-text">Posts</span></h3>
-      <div *ngFor="let link of links$ | async">
-        <app-post-card [postName]="link.title" [link]="link.route" [description]="link.description"></app-post-card>
+      <div *ngFor="let post of posts">
+        <app-post-card [postName]="post.title" [id]="post.id" [excerpt]="post.excerpt"></app-post-card>
       </div>
 
     </div>
@@ -72,20 +73,20 @@ import { map, Observable } from 'rxjs';
 })
 export class ShowcaseComponent implements OnInit {
   mouseovered: boolean = false;
-  // TODO Possibly create Post Model to hold these values? 
-  postOneTitle:string = 'Why I chose Angular Over React';
-  postTwoTitle:string = 'Blog Two';
-  postOneUrl: string = '/posts/post/test-one';
-  postTwoUrl:string = '/posts/post/test-two';
-  links$: Observable<ScullyRoute[]> = this.scullyRoutes.available$.pipe(
-    map((routes) => {
-      return routes.filter((route: ScullyRoute) => route.title && route.published && route.route.startsWith('/blog/'))
-    })
-  )
+  posts: Post[] = [];
+ 
 
-  constructor(public scullyRoutes: ScullyRoutesService) { }
+  constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
+    this.loadPosts();
+  }
+
+  loadPosts() {
+    this.blogService.getAllPosts().subscribe(response => {
+     this.posts = response
+    })
+
   }
 
 }

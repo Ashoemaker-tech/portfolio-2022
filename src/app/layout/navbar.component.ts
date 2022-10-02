@@ -5,7 +5,7 @@ import { Router } from '@angular/router'
   selector: 'app-navbar',
   template: `
     <header class=" container d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <a routerLink="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         <span class="fs-4 grad-text"><i class="fa-solid fa-code"></i> Andrew Shoemaker</span>
       </a>
