@@ -14,6 +14,8 @@ import { ShowcaseComponent } from './components/showcase.component';
 import { ContactComponent } from './components/contact.component';
 import { PostCardComponent } from './components/post-card.component';
 import { PostComponent } from './pages/post.component';
+import { AdminComponent } from './pages/admin.component';
+import { LoginComponent } from './pages/login.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { PostComponent } from './pages/post.component';
     ContactComponent,
     PostCardComponent,
     PostComponent,
+    AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
