@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar.component';
@@ -12,10 +13,7 @@ import { HomeComponent } from './pages/home.component';
 import { ResumeComponent } from './pages/resume.component';
 import { ShowcaseComponent } from './components/showcase.component';
 import { ContactComponent } from './components/contact.component';
-import { PostCardComponent } from './components/post-card.component';
-import { PostComponent } from './pages/post.component';
-import { AdminComponent } from './pages/admin.component';
-import { LoginComponent } from './pages/login.component';
+import { ProjectCardComponent } from './components/project-card.component';
 
 
 @NgModule({
@@ -28,10 +26,7 @@ import { LoginComponent } from './pages/login.component';
     ResumeComponent,
     ShowcaseComponent,
     ContactComponent,
-    PostCardComponent,
-    PostComponent,
-    AdminComponent,
-    LoginComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

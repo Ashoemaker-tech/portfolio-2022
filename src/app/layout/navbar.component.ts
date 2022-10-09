@@ -4,17 +4,17 @@ import { Router } from '@angular/router'
 @Component({
   selector: 'app-navbar',
   template: `
-    <header class=" container d-flex flex-wrap justify-content-center py-3 mb-4">
-      <a routerLink="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4 grad-text"><i class="fa-solid fa-code"></i> Andrew Shoemaker</span>
-      </a>
-
-      <ul class="nav">
-        <li class="nav-item"><a [class.grad-text]="hasRoute('/')" routerLink="/" class=" nav-link text-light" aria-current="page">Home</a></li>
-        <li class="nav-item"><a [class.grad-text]="hasRoute('/resume')" routerLink="/resume" class=" nav-link text-light">Resume</a></li>    
-      </ul>
-    </header>
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <a class="normal-case text-2xl"><span class="fs-4 grad-text"><i class="fa-solid fa-code"></i> Andrew Shoemaker</span></a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal p-0">
+          <li class="nav-item"><a [class.grad-text]="hasRoute('/')" routerLink="/" class=" nav-link text-light" aria-current="page">Home</a></li>
+          <li class="nav-item"><a [class.grad-text]="hasRoute('/resume')" routerLink="/resume" class=" nav-link text-light">Resume</a></li>
+        </ul>
+      </div>
+    </div>
   `,
   styles: [
   ]

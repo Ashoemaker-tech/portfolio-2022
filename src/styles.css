@@ -1,5 +1,8 @@
-@import '~bootstrap/dist/css/bootstrap.css';
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 :root {
   --mainTextColor: #fff;
@@ -10,14 +13,10 @@
 }
 
 * {
-  font-family: 'Readex Pro';
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5em;
   box-sizing: border-box;
   color: var(--mainTextColor);
-}
-
-body{
-  background-color: var(--mainBgColor);
 }
 
 p, span, li {
@@ -39,6 +38,7 @@ li {
   background: -webkit-linear-gradient(45deg, #fa8043, #ff4187);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .card {
