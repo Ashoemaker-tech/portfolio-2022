@@ -14,8 +14,8 @@ import { Component, OnInit } from '@angular/core';
     </h2>
     <p>A dating app project that was built from the ground up with Angular .Net Core and Bootstrap for styling.</p>
     <div class="card-actions justify-end">
-      <div class="badge badge-info">.Net</div> 
       <div class="badge badge-error">Angular</div>
+      <div class="badge badge-info">.Net</div> 
       <div class="badge badge-secondary">SQL</div>
     </div>
   </div>

@@ -40,11 +40,11 @@ import { Component, OnInit } from '@angular/core';
       <h2>Tech Stack</h2>
       <div id="wrapper--techstack__items">
         <div class="card--techstack">
-          <span>C#, JavaScript</span>
+          <span>JavaScript, C#, PHP</span>
         </div>
 
         <div class="card--techstack">
-          <span>.NET, Node</span>
+          <span>.NET, Laravel</span>
         </div>
 
         <div class="card--techstack">
