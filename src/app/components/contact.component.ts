@@ -9,7 +9,7 @@ import * as AOS from "aos";
     <p class="text-center text-lg">Send a message to connect with me and I will get back with you shortly.</p>
     </div>
     <div class="my-20 mx-auto max-w-5xl" data-aos="fade-up" data-aos-duration="1000">
-      <form ngNoForm target="_blank"  action="https://formsubmit.co/andrew.shoemaker9@gmail.com" method="POST">
+      <form ngNoForm target="_blank"  action="https://formspree.io/f/mjvzokoy" method="POST">
         <div class=" bg-base-200 overflow-hidden shadow sm:rounded-md">
           <div class="px-4 py-5 mt-4 sm:p-6">
             <div class="grid grid-cols-6 gap-6">
