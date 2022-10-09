@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-footer',
   template: `
     <footer class="footer mt-auto py-3 text-center">
-      <div class="container">
-        <p class="text-light">&copy; Copyright {{ year }} by <span>Andrew Shoemaker</span> Made With <i class="fa-brands fa-angular"></i> hosted on Azure</p>
+      <div class="mx-auto">
+        <p class="text-light text-lg">&copy; Copyright {{ year }} by <span>Andrew Shoemaker</span> Made With <i class="fa-brands fa-angular"></i> hosted on Azure</p>
       </div>
     </footer>
   `,

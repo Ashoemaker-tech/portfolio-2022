@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
       <div>
         <h1 id="username">Andrew Shoemaker</h1>
         <p id="bio">Software Engineer with a background in construction. Experience with
-          building MVC & minimal APIs with C# .NET core framework as well as
-          building modern and responsive user interfaces with Angular
+          building modern and responsive user interfaces with Angular  as well as
+          building MVC & minimal APIs with C# .NET core framework
           </p>
         <p id="email">👉 andrew.shoemaker9@gmail.com</p>
       </div>
@@ -40,11 +40,11 @@ import { Component, OnInit } from '@angular/core';
       <h2>Tech Stack</h2>
       <div id="wrapper--techstack__items">
         <div class="card--techstack">
-          <span>C#, JavaScript</span>
+          <span>JavaScript, C#, PHP</span>
         </div>
 
         <div class="card--techstack">
-          <span>.NET, Node</span>
+          <span>.NET, Laravel</span>
         </div>
 
         <div class="card--techstack">
