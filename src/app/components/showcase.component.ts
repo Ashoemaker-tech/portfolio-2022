@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from "aos";
+import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-showcase',
   template: `
     <div class="my-20 px-2">
       <h3 data-aos="fade-right" data-aos-duration="1000" class="text-3xl my-20 font-bold">Recent <span class="grad-text">Projects</span></h3>
-      <app-project-card ></app-project-card>
+      <div class="flex flex-row justify-evenly flex-wrap">
+        <div *ngFor="let project of projects">
+          <app-project-card [title]="project.title" [excerpt]="project.excerpt"
+          [projUrl]="project.projUrl" [codeUrl]="project.codeUrl" [image]="project.image" ></app-project-card>
+        </div>
+      </div>
       <div data-aos="fade-left" data-aos-duration="1000">
         <h3 class="text-3xl font-bold my-20">Tech <span class="grad-text">Used</span></h3>
         <div class="my-10 flex flex-wrap justify-around ">
@@ -46,8 +52,9 @@ import * as AOS from "aos";
   ]
 })
 export class ShowcaseComponent implements OnInit {
+  projects = this.projectService.projects
    
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
     AOS.init();

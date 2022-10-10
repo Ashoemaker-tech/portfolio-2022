@@ -41,9 +41,6 @@ import * as AOS from "aos";
     `,
     styles: [
     `
-    .spacer {
-      flex: 1 1 auto;
-    }
 
     `
     ]

@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from "aos";
+
 
 @Component({
   selector: 'app-resume',
   template: `
-    <div id="container--main">
+    <div id="container--main" data-aos="fade-right" data-aos-duration="1000">
     <section id="wrapper--hero" class="section--page">
       <img id="profile-pic" src="./assets/images/profile_pic.jpg" alt=""/>
 
@@ -138,6 +140,7 @@ export class ResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
