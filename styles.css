@@ -1,23 +1,35 @@
-@import '~bootstrap/dist/css/bootstrap.css';
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 :root {
   --mainTextColor: #fff;
   --secondaryTextColor: #adb0b1;
   --mainLinkColor: rgb(30,190,214);
   --mainBorderColor: #2b3031;
-  --mainBgColor: #131415;
+  --mainBgColor: #1e2022;
 }
 
 * {
-  font-family: 'Readex Pro';
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5em;
   box-sizing: border-box;
   color: var(--mainTextColor);
+  background-color: var(--mainBgColor);
 }
 
-body{
-  background-color: var(--mainBgColor);
+/* hide verticle scroll bar */
+/* chrome, Safari, Opera */
+body::-webkit-scrollbar { 
+  width: 0 !important; 
+}
+
+/* mozilla */
+body {
+  overflow:  -moz-scrollbars-none;
+  
 }
 
 p, span, li {
@@ -39,20 +51,49 @@ li {
   background: -webkit-linear-gradient(45deg, #fa8043, #ff4187);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+/* Nav */
+nav span {
+    font-size: 28px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav--btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
 }
 
-.card {
-  background-color: #2a2e35;
+.nav--btns li button {
+    border: none;
+    color: var(--secondaryTextColor);
 }
 
-.card-img-top {
-  height: 14rem;
-  object-fit: cover;
+.nav--btns li button:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, #fa8043, #ff4187);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#container--main {
-  max-width: 700px;
-  margin: 0 auto;
+.home {
+    margin-right: 10px;
+}
+.resume {
+    margin-left: 10px;
+}
+
+
+/* Page Layout */
+.container--main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
 }
 
 .section--page {
@@ -65,6 +106,57 @@ li {
   align-items: center;
   gap: 4em;
 }
+
+/* Portfolio Section */
+
+.hero--heading {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* Portfolio Section Icons */
+.icons {
+    list-style-type: none;
+    padding: 0;
+  }
+  .icons li{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .icons li svg {
+    width: 25px;
+  }
+  .icons li:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -28%;
+    z-index: -1;
+    border-radius: 10%;
+    background: linear-gradient(45deg, #fa8043, #ff4187);
+    transition: all 0.3s ease-in;
+  }
+  .icons li:hover:before {
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+  .icons li a span {
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+  }
+  .icons li:hover a span{
+    transform: scale(1.2);
+  }
+
+/* Resume Section */
 
 #username {
   font-size: 3em;
@@ -161,6 +253,11 @@ li {
 /* Media Queries */
 
 @media(max-width:600px) {
+
+    nav span {
+        font-size: 18px;
+    }
+
   #wrapper--hero{
     flex-direction: column;
     gap: 1em;
@@ -182,14 +279,15 @@ li {
   }
 }
 
+/* Footer */
 
-/* hide verticle scroll bar */
-/* chrome, Safari, Opera */
-body::-webkit-scrollbar { 
-  width: 0 !important; 
+footer {
+    text-align: center;
 }
 
-/* mozilla */
-body {
-  overflow:  -moz-scrollbars-none;
+footer svg {
+    width: 15px;
+    height: 15px;
 }
+
+
