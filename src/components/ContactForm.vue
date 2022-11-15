@@ -7,13 +7,13 @@
         <form target="_blank"  action="https://formspree.io/f/mjvzokoy" method="POST">
             <div class="spacer-y">
                 <div class="flex-form">
-                    <div>
+                    <div  data-aos="fade-right" data-aos-ease="ease" data-aos-duration="2000" >
                         <input type="text" name="name"  placeholder="Name" autocomplete="off" required>
                     </div>
-                    <div>
+                    <div  data-aos="fade-left" data-aos-ease="ease" data-aos-duration="2000" >
                         <input type="email" name="email" placeholder="Email"  autocomplete="off" required>
                     </div>
-                    <div>
+                    <div  data-aos="fade-up" data-aos-ease="ease" data-aos-duration="2000" >
                         <textarea type="text" name="message" rows="15" placeholder="Message" required></textarea>
                     </div>
                 </div>

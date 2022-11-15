@@ -9,7 +9,7 @@ import ResumeAccomplishments from '../components/ResumeAccomplishments.vue'
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="2000">
   <ResumeHeading />
   <ResumeSocials />
   <ResumeQual />

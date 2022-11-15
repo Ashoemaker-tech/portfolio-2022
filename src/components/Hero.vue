@@ -4,8 +4,8 @@
 <template >
     <div>
         <div class="hero-content">
-            <img src="../../assets/images/avatar.svg" />
-            <div>
+            <img src="../../assets/images/avatar.svg" data-aos="fade-up" data-aos-ease="ease" data-aos-duration="1500" />
+            <div data-aos="fade-down" data-aos-ease="ease" data-aos-duration="1500">
                 <h1 class="text-5xl font-bold">Hi there, I'm Andrew</h1>
                 <p class="py-6 text-lg">I am a full stack software developer that is based in the southestern United States. I specialize in building cutting edge, blazingly fast, pixel perfect web apps with Laravel & Vue. </p>
                 <ul class="icons">
