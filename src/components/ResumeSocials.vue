@@ -9,7 +9,7 @@
         <a href="https://www.linkedin.com/in/andrew-shoemaker-825847a6/" target="_blank">LinkedIn</a>
         <a href="https://github.com/Ashoemaker-tech" target="_blank">Github</a>
         <a href="https://twitter.com/Ashoemaker_tech" target="_blank">Twitter</a>
-        <a href="../../public/Resume2022.pdf" target="_blank">Download Resume</a>
+        <a href="/Resume2022.pdf" target="_blank">Download Resume</a>
       </div>
     </section>
 </template>
