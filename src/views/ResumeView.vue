@@ -19,7 +19,7 @@ import ResumeAccomplishments from '../components/ResumeAccomplishments.vue'
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .container {
   max-width: 700px;

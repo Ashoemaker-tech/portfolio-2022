@@ -3,6 +3,7 @@
 import Hero from '../components/Hero.vue';
 import Showcase from '../components/Showcase.vue';
 import ContactForm from '../components/ContactForm.vue';
+import Projects from '../components/Projects.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import ContactForm from '../components/ContactForm.vue';
     <h3>Recent Projects</h3>
     <div>
       <!-- TODO Add Projects Here -->
+      <Projects />
     </div>
     <div class="spacer-y">
       <h3>Tech Used</h3>
