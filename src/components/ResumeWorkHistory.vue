@@ -4,7 +4,7 @@
 
 <template>
     <section id="work-history-wrapper" class="section-page">
-      <h2>Recent Work History</h2>
+      <h2 class="font-bold text-2xl">Recent Work History</h2>
       <div class="line-break"></div>
       <div class="card-work-history">
         <strong>Freelance Software Engineer | Self Employed</strong>
@@ -46,7 +46,7 @@
 
 .card-work-history {
   border-left: 1px solid var(--color-border);
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 3em;
   padding-left: 2em;
 }

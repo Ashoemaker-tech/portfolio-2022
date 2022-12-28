@@ -9,13 +9,13 @@ import ResumeAccomplishments from '../components/ResumeAccomplishments.vue'
 </script>
 
 <template>
-  <div class="container" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="2000">
+  <div class="container">
   <ResumeHeading />
   <ResumeSocials />
-  <ResumeQual />
+  <!-- <ResumeQual /> -->
   <ResumeTechStack />
-  <ResumeWorkHistory />
   <ResumeAccomplishments />
+  <ResumeWorkHistory />
   </div>
 </template>
 

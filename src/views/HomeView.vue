@@ -7,37 +7,26 @@ import Projects from '../components/Projects.vue';
 </script>
 
 <template>
-<div class="spacer-y">
+<div class="mt-24">
   <Hero />
-  <div>
-    <h3>Recent Projects</h3>
+  <div class="space-y-40 lg:mx-24">
     <div>
-      <!-- TODO Add Projects Here -->
+      <h1 class="text-3xl font-bold my-10">Recent Projects</h1>
       <Projects />
     </div>
-    <div class="spacer-y">
-      <h3>Tech Used</h3>
+    <div>
+      <h1 class="text-3xl font-bold my-10">Tech Used</h1>
       <Showcase />
     </div>
   </div>
 </div>
-<div class="spacer-y">
-  <div class="contact-headings">
-    <h3 class="">Let's Work Together</h3>
-    <p class="">Send a message to connect with me and I will get back with you shortly.</p>
+<div class="mt-24">
+  <div class="text-center">
+    <h1 class="text-3xl font-bold">Let's Work Together</h1>
+    <p class="mt-6">Send a message to connect with me and I will get back with you shortly.</p>
   </div>
   <ContactForm />
 </div>
 </template>
 
-<style scoped>
-h3 {
-  margin: 2rem 0;
-  font-size: 2rem;
-  font-weight: medium;
-}
-.contact-headings {
-  text-align: center;
-}
 
-</style>

@@ -8,17 +8,17 @@
             
                 <div class="flex-form">
                     <div>
-                        <input type="text" name="name" placeholder="Your name..." class="input input-bordered w-full mb-4" required />
+                        <input type="text" name="name" placeholder="Your name..." class="input input-bordered w-full mb-4 shadow-lg" required />
                     </div>
                     <div>
-                        <input type="email" name="email" autocomplete="off" placeholder="Your email" class="input input-bordered w-full mb-4" required />
+                        <input type="email" name="email" autocomplete="off" placeholder="Your email" class="input input-bordered w-full mb-4 shadow-lg" required />
                     </div>
                     <div>
-                        <textarea class="textarea textarea-bordered w-full mb-4" type="text" name="message" rows="8" placeholder="Message" required></textarea>
+                        <textarea class="textarea textarea-bordered w-full mb-4 shadow-lg" type="text" name="message" rows="8" placeholder="Message" required></textarea>
                     </div>
                 </div>
                 <div class="flex justify-center">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-outline shadow-xl">Send Message</button>
                 </div>
         </form>
     </div>

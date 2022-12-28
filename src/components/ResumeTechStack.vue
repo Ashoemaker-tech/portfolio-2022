@@ -3,21 +3,13 @@
 </script>
 
 <template>
-    <section class="section-page">
-      <h2>Tech Stack</h2>
-      <div id="wrapper-techstack-items">
-        <div class="card-techstack">
-          <span>JavaScript, PHP</span>
-        </div>
-        <div class="card-techstack">
-          <span>Laravel, Wordpress</span>
-        </div>
-        <div class="card-techstack">
-          <span>Vue, Blade, AlpineJs</span>
-        </div>
-        <div class="card-techstack">
+    <section class="container mx-auto">
+      <h2 class="mb-6 font-bold text-2xl">Tech Stack</h2>
+      <div class="flex items-center justify-between flex-wrap">
+          <span>JavaScript, Vue</span>
+          <span>PHP, Laravel</span>
+          <span>Blade, AlpineJs</span>
           <span>MySQL, SQLite, NoSQL</span>
-        </div>
       </div>
     </section>
 
@@ -25,16 +17,10 @@
 
 <style>
 
-#wrapper-techstack-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  font-size: 0.9em;
-}
 
 .card-techstack {
   border: 1px solid var(--color-border);
-  padding: 0.5em 1em;
+  padding: 0.5em 0.5em;
   border-radius: 5px;
 }
 
