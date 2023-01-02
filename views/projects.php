@@ -1,226 +1,178 @@
-<?php include 'inc/header.php'; ?>
-<div class="tokyo_tm_portfolio_titles"></div>
-<div id="projects">
-    <div class="container">
-        <div class="tokyo_tm_portfolio w-full h-auto clear-both float-left px-0 pt-[100px] pb-[40px]">
-            <div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
-                <div class="title_flex w-full h-auto clear-both flex justify-between items-end">
-                    <div class="left">
-                        <span class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]">Portfolio</span>
-                        <h3 class="font-extrabold font-montserrat">Creative Portfolio</h3>
-                    </div>
-                    <div class="portfolio_filter">
-                        <ul class="list-none">
-                            <li class="mr-[25px] inline-block"><a href="#" class="current text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" data-filter="*">All</a></li>
-                            <li class="mr-[25px] inline-block"><a class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" href="#" data-filter=".vimeo">Vimeo</a></li>
-                            <li class="mr-[25px] inline-block"><a class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" href="#" data-filter=".youtube">Youtube</a></li>
-                            <li class="mr-[25px] inline-block"><a class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" href="#" data-filter=".soundcloud">Soundcloud</a></li>
-                            <li class="mr-[25px] inline-block"><a class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" href="#" data-filter=".image">Image</a></li>
-                            <li class="inline-block"><a class="text-[#767676] inline-block font-medium font-montserrat transition-all duration-300 hover:text-black" href="#" data-filter=".detail">Detail</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="list_wrapper w-full h-auto clear-both float-left">
-                <ul class="portfolio_list gallery_zoom ml-[-40px] list-none">
-                    <li class="vimeo mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Teresa Butler" data-category="Vimeo">
-                                <a class="popup-vimeo" href="https://vimeo.com/337293658">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/5.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="youtube mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Ashley Flores" data-category="Youtube">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/6.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="soundcloud mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Derek Smith" data-category="Soundcloud">
-                                <a class="soundcloude_link mfp-iframe audio" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/4.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="image mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Gloria Jenkins" data-category="Image">
-                                <a class="zoom" href="assets/img/portfolio/3.jpg">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/3.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="detail mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Selena Gomez" data-category="Detail">
-                                <a class="popup_info" href="#">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/7.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
+<?php require 'inc/header.php'; ?>
+<div id="blog" class="">
+	<div class="container">
+		<div class="tokyo_tm_news w-full clear-both float-left h-auto pt-[100px] px-0 pb-[45px]">
+			<div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
+				<div class="title_flex w-full h-auto clear-both flex justify-between items-end">
+					<div class="left">
+						<span class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]">Projects</span>
+						<h3 class="font-extrabold font-montserrat">Latest News</h3>
+					</div>
+				</div>
+			</div>
+			<ul class="ml-[-50px] list-none">
+				<li class="mb-[50px] float-left w-1/2 pl-[50px]">
+					<div class="list_inner w-full clear-both float-left h-auto relative">
+						<div class="image relative overflow-hidden">
+							<img class="min-w-full opacity-0" src="assets/img/thumbs/40-25.jpg" alt="" />
+							<img class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" src="assets/img/news/1.jpg" />
+							<!-- <a class="tokyo_tm_full_link" href="#"></a> -->
+						</div>
+						<div class="details w-full float-left px-[40px] pt-[30px] pb-[25px] bg-white transition-all duration-300">
+							<div class="extra flex items-center justify-between mb-[25px] relative">
+								<div class="short">
+									<p class="date font-montserrat text-[13px] text-[#767676]">By <a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Alex Watson</a> <span class="relative">22 Oct 2022</span></p>
+								</div>
+							</div>
+							<h3 class="title mb-[10px] leading-[1.4]"><a class="text-black text-[18px] font-semibold inline-block transition-all duration-300 hover:text-black" href="#">Format releases a new tool that enables direct video hosting</a></h3>
+							<div class="tokyo_tm_read_more mb-2">
+								<a href="/code"><span>Code</span></a>
+							</div>
+							<div class="tokyo_tm_read_more">
+								<a href="/demo"><span>Demo</span></a>
+							</div>
+						</div>
 
-                        <!-- Portfolio Popup Start -->
-                        <div class="details_all_wrap w-full h-auto clear-both float-left">
-                            <div class="popup_details">
-                                <div class="main_details w-full h-auto clear-both flex mb-[90px]">
-                                    <div class="textbox w-[70%] pr-[40px]">
-                                        <p class="mb-[20px]">We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.</p>
-                                        <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.</p>
-                                    </div>
-                                    <div class="detailbox w-[30%] pl-[40px]">
-                                        <ul class="list-none">
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Client</span>
-                                                <span>Alvaro Morata</span>
-                                            </li>
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Category</span>
-                                                <span><a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Detail</a></span>
-                                            </li>
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Date</span>
-                                                <span>October 22, 2022</span>
-                                            </li>
-                                            <li class="w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Share</span>
-                                                <ul class="share list-none relative top-[7px]">
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-facebook-squared"></i></a></li>
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-twitter-squared"></i></a></li>
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-behance-squared"></i></a></li>
-                                                    <li class="inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-linkedin-squared"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="additional_images w-full h-auto clear-both float-left">
-                                    <ul class="ml-[-30px] list-none">
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/1.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/2.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/3.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Portfolio Popup End -->
+						<!-- News Popup Start -->
+						<div class="main_content w-full float-left">
+							<div class="descriptions w-full float-left">
+								<p class="bigger text-[#888] text-[20px] mb-[31px]">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+								<p class="mb-[22px]">Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+								<div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
+									<div class="icon absolute left-0 top-[5px]">
+										<i class="icon-quote-left text-[40px] text-black"></i>
+									</div>
+									<p class="text-[20px]">Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+								</div>
+								<p class="mb-[22px]">Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+								<p class="mb-[22px]">Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+								<p>The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+							</div>
+						</div>
+						<!-- /News Popup End -->
 
-                    </li>
-                    <li class="detail mb-[40px] float-left w-1/3 pl-[40px]">
-                        <div class="inner w-full h-auto clear-both float-left overflow-hidden relative">
-                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Ave Simone" data-category="Detail">
-                                <a class="popup_info" href="#">
-                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/1-1.jpg" alt="" />
-                                    <div class="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/portfolio/8.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
+					</div>
+				</li>
+				<li class="mb-[50px] float-left w-1/2 pl-[50px]">
+					<div class="list_inner w-full clear-both float-left h-auto relative">
+						<div class="image relative overflow-hidden">
+							<img class="min-w-full opacity-0" src="assets/img/thumbs/40-25.jpg" alt="" />
+							<div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/news/2.jpg"></div>
+							<a class="tokyo_tm_full_link" href="#"></a>
+						</div>
+						<div class="details w-full float-left px-[40px] pt-[30px] pb-[25px] bg-white transition-all duration-300">
+							<div class="extra flex items-center justify-between mb-[25px] relative">
+								<div class="short">
+									<p class="date font-montserrat text-[13px] text-[#767676]">By <a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Brook Kennedy</a> <span class="relative">15 Oct 2022</span></p>
+								</div>
+							</div>
+							<h3 class="title mb-[10px] leading-[1.4]"><a class="text-black text-[18px] font-semibold inline-block transition-all duration-300 hover:text-black" href="#">Sony announced two new full frame cameras with zero fanfare</a></h3>
+							<div class="tokyo_tm_read_more">
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
 
-                        <!-- Portfolio Popup Start -->
-                        <div class="details_all_wrap w-full h-auto clear-both float-left">
-                            <div class="popup_details">
-                                <div class="main_details w-full h-auto clear-both flex mb-[90px]">
-                                    <div class="textbox w-[70%] pr-[40px]">
-                                        <p class="mb-[20px]">We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.</p>
-                                        <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.</p>
-                                    </div>
-                                    <div class="detailbox w-[30%] pl-[40px]">
-                                        <ul class="list-none">
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Client</span>
-                                                <span>Alvaro Morata</span>
-                                            </li>
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Category</span>
-                                                <span><a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Detail</a></span>
-                                            </li>
-                                            <li class="mb-[8px] w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Date</span>
-                                                <span>October 22, 2022</span>
-                                            </li>
-                                            <li class="w-full float-left">
-                                                <span class="first font-bold block text-black mb-[3px]">Share</span>
-                                                <ul class="share list-none relative top-[7px]">
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-facebook-squared"></i></a></li>
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-twitter-squared"></i></a></li>
-                                                    <li class="mr-[10px] inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-behance-squared"></i></a></li>
-                                                    <li class="inline-block"><a class="text-black text-[18px]" href="#"><i class="icon-linkedin-squared"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="additional_images w-full h-auto clear-both float-left">
-                                    <ul class="ml-[-30px] list-none">
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/1.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/2.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mb-[30px] float-left w-1/2 pl-[30px]">
-                                            <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                <div class="my_image relative">
-                                                    <img class="opacity-0 min-w-full" src="assets/img/thumbs/4-2.jpg" alt="" />
-                                                    <div class="main absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/3.jpg"></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Portfolio Popup End -->
+						<!-- News Popup Start -->
+						<div class="main_content w-full float-left">
+							<div class="descriptions w-full float-left">
+								<p class="bigger text-[#888] text-[20px] mb-[31px]">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+								<p class="mb-[22px]">Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+								<div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
+									<div class="icon absolute left-0 top-[5px]">
+										<i class="icon-quote-left text-[40px] text-black"></i>
+									</div>
+									<p class="text-[20px]">Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+								</div>
+								<p class="mb-[22px]">Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+								<p class="mb-[22px]">Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+								<p class="mb-[22px]">The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+							</div>
+						</div>
+						<!-- /News Popup End -->
 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+					</div>
+				</li>
+				<li class="mb-[50px] float-left w-1/2 pl-[50px]">
+					<div class="list_inner w-full clear-both float-left h-auto relative">
+						<div class="image relative overflow-hidden">
+							<img class="min-w-full opacity-0" src="assets/img/thumbs/40-25.jpg" alt="" />
+							<div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/news/3.jpg"></div>
+							<a class="tokyo_tm_full_link" href="#"></a>
+						</div>
+						<div class="details w-full float-left px-[40px] pt-[30px] pb-[25px] bg-white transition-all duration-300">
+							<div class="extra flex items-center justify-between mb-[25px] relative">
+								<div class="short">
+									<p class="date font-montserrat text-[13px] text-[#767676]">By <a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Paola Atkins</a> <span class="relative">07 Oct 2022</span></p>
+								</div>
+							</div>
+							<h3 class="title mb-[10px] leading-[1.4]"><a class="text-black text-[18px] font-semibold inline-block transition-all duration-300 hover:text-black" href="#">Why every photographer should shoot film, even in 2022</a></h3>
+							<div class="tokyo_tm_read_more">
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<!-- News Popup Start -->
+						<div class="main_content w-full float-left">
+							<div class="descriptions w-full float-left">
+								<p class="bigger text-[#888] text-[20px] mb-[31px]">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+								<p class="mb-[22px]">Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+								<div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
+									<div class="icon absolute left-0 top-[5px]">
+										<i class="icon-quote-left text-[40px] text-black"></i>
+									</div>
+									<p class="text-[20px]">Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+								</div>
+								<p class="mb-[22px]">Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+								<p class="mb-[22px]">Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+								<p>The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+							</div>
+						</div>
+						<!-- /News Popup End -->
+
+					</div>
+				</li>
+				<li class="mb-[50px] float-left w-1/2 pl-[50px]">
+					<div class="list_inner w-full clear-both float-left h-auto relative">
+						<div class="image relative overflow-hidden">
+							<img class="min-w-full opacity-0" src="assets/img/thumbs/40-25.jpg" alt="" />
+							<div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300" data-img-url="assets/img/news/4.jpg"></div>
+							<a class="tokyo_tm_full_link" href="#"></a>
+						</div>
+						<div class="details w-full float-left px-[40px] pt-[30px] pb-[25px] bg-white transition-all duration-300">
+							<div class="extra flex items-center justify-between mb-[25px] relative">
+								<div class="short">
+									<p class="date font-montserrat text-[13px] text-[#767676]">By <a class="text-[#767676] transition-all duration-300 hover:text-black" href="#">Kevin Stone</a> <span class="relative">25 Sep 2022</span></p>
+								</div>
+							</div>
+							<h3 class="title mb-[10px] leading-[1.4]"><a class="text-black text-[18px] font-semibold inline-block transition-all duration-300 hover:text-black" href="#">Stay creative in lockdown with these fun photo projects</a></h3>
+							<div class="tokyo_tm_read_more">
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<!-- News Popup Start -->
+						<div class="main_content w-full float-left">
+							<div class="descriptions w-full float-left">
+								<p class="bigger text-[#888] text-[20px] mb-[31px]">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+								<p class="mb-[22px]">Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+								<div class="quotebox w-full clear-both float-left h-auto relative pl-[70px] mb-[24px]">
+									<div class="icon absolute left-0 top-[5px]">
+										<i class="icon-quote-left text-[40px] text-black"></i>
+									</div>
+									<p class="text-[20px]">Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+								</div>
+								<p class="mb-[22px]">Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+								<p class="mb-[22px]">Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+								<p>The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+							</div>
+						</div>
+						<!-- /News Popup End -->
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
-<?php include 'inc/footer.php'; ?>
+<?php require 'inc/footer.php'; ?>

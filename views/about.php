@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php require 'inc/header.php'; ?>
 <div id="about" class="">
     <div class="container">
         <div class="tokyo_tm_about w-full h-auto clear-both float-left py-[100px] px-0">
@@ -10,15 +10,12 @@
                     </div>
                 </div>
             </div>
-            <div class="top_author_image w-full clear-both float-left relative mb-[35px]">
-                <img class="" src="assets/img/portfolio/profilepic.jpg" alt="andrew shoemaker" />
-            </div>
             <div class="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
                 <h3 class="text-[22px] font-bold">Andrew Shoemaker</h3>
                 <span>Full Stack Web Developer</span>
             </div>
             <div class="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
-                <p class="mb-[11px]">My name is [Your Name] and I am a full stack web developer with 2 years of experience. I specialize in using PHP and Laravel to build robust and scalable back-end systems, and I also have experience with front-end technologies such as JavaScript, Vue.js, Livewire, and Alpine.js.</p>
+                <p class="mb-[11px]">I am a full stack web developer with 2 years of experience. I specialize in using PHP and Laravel to build robust and scalable back-end systems, and I also have experience with front-end technologies such as JavaScript, Vue.js, Livewire, and Alpine.js.</p>
                 <p>I am highly skilled in creating dynamic and interactive web applications, and I have a passion for solving complex problems and developing clean, efficient code. I am also a strong collaborator and enjoy working with a team to bring ideas to life.</p>
             </div>
             <div class="tokyo_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]">
@@ -149,19 +146,19 @@
                     <div class="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
                         <h3 class="text-[20px] font-bold">Knowledge</h3>
                     </div>
-                    <div class="tokyo_tm_skill_list w-full h-auto clear-both float-left">
+                    <div class="tokyo_tm_skill_list w-full h-auto clear-both ">
                         <ul class="m-0 list-none">
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />HTML, CSS</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>HTML, CSS</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />PHP, JavaScript</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>PHP, JavaScript</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Vue, Livewire, Laravel</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>Vue, Livewire, Laravel</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Bootstrap, Tailwind</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>Bootstrap, Tailwind</span>
                             </li>
                         </ul>
                     </div>
@@ -172,20 +169,20 @@
                     </div>
                     <div class="tokyo_tm_skill_list w-full h-auto clear-both float-left">
                         <ul class="m-0 list-none">
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Continuous Learning</span>
+                            <li class="m-0  relative">
+                                <span class="text-white mr-[8px]">▶</span><span>Continuous Learning</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Creating Web Apps</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>Creating Web Apps</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />App Optimization</span>
+                            <li class="m-0 relative">
+                            <span class="text-white mr-[8px]">▶</span><span>App Optimization</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Enterprise Software</span>
+                            <li class="m-0  relative">
+                            <span class="text-white mr-[8px]">▶</span><span>Enterprise Software</span>
                             </li>
-                            <li class="m-0 pl-[25px] relative">
-                                <span><img class="svg text-black w-[10px] h-[10px] absolute left-0 top-1/2 translate-y-[-50%]" src="assets/img/svg/rightarrow.svg" alt="" />Contributing to open source</span>
+                            <li class="m-0 relative">
+                            <span class="text-white mr-[8px]">▶</span><span>Contributing to open source</span>
                             </li>
                         </ul>
                     </div>
@@ -196,4 +193,4 @@
 
 </div>
 
-<?php include 'inc/footer.php'; ?>
+<?php require 'inc/footer.php'; ?>
