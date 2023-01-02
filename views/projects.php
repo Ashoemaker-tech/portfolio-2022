@@ -1,5 +1,6 @@
+<?php include 'inc/header.php'; ?>
 <div class="tokyo_tm_portfolio_titles"></div>
-<div id="projects" class="tokyo_tm_section">
+<div id="projects">
     <div class="container">
         <div class="tokyo_tm_portfolio w-full h-auto clear-both float-left px-0 pt-[100px] pb-[40px]">
             <div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
@@ -221,3 +222,5 @@
         </div>
     </div>
 </div>
+
+<?php include 'inc/footer.php'; ?>

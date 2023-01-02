@@ -1,10 +1,11 @@
+<?php include 'inc/header.php'; ?>
 <div id="home" class="tokyo_tm_section animated">
     <div class="container">
         <div class="tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative">
             <div class="home_content flex items-center">
                 <div class="avatar min-w-[300px] min-h-[300px] relative rounded-full" data-type="circle">
                     <!-- data-type values are: "wave", "circle", "square"-->
-                    <div class="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="assets/img/portfolio/headshot.png"></div>
+                    <img class="image absolute inset-0 bg-no-repeat bg-center bg-cover" src="assets/img/portfolio/headshot.png" />
                 </div>
                 <div class="details ml-[80px]">
                     <h3 class="name text-[55px] font-extrabold uppercase mb-[14px]">Andrew <span>Shoemaker</span></h3>
@@ -21,3 +22,4 @@
         </div>
     </div>
 </div>
+<?php include 'inc/footer.php'; ?>

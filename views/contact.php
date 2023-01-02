@@ -1,4 +1,5 @@
-<div id="contact" class="tokyo_tm_section">
+<?php include 'inc/header.php'; ?>
+<div>
     <div class="container">
         <div class="tokyo_tm_contact w-full float-left clear-both h-auto py-[100px] px-[0px]">
             <div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
@@ -61,3 +62,5 @@
         </div>
     </div>
 </div>
+
+<?php include 'inc/footer.php'; ?>
