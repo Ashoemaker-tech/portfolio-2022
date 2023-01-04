@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Andrew Shoemaker" content="Portfolio site">
 	<meta name="description" content="View the diverse range of creative work from Andrew Shoemaker, a Laravel and VueJs developer based in United States. From static sites to full stack applications, discover the latest projects and get in touch to collaborate.">
