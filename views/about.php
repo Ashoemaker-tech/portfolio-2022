@@ -1,9 +1,9 @@
 <?php require 'inc/header.php'; ?>
-<div id="about" class="">
+<div id="swup" class="transition-fade">
     <div class="container">
         <div class="tokyo_tm_about w-full h-auto clear-both float-left py-[100px] px-0">
             <div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
-                <div class="title_flex w-full h-auto clear-both flex justify-between items-end">
+                <div class="flex items-end justify-between clear-both w-full h-auto title_flex">
                     <div class="left">
                         <span class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]">About</span>
                         <h3 class="font-extrabold font-montserrat">About Me</h3>
@@ -20,7 +20,7 @@
             </div>
             <div class="tokyo_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]">
                 <div class="left w-1/2 pr-[50px]">
-                    <div class="tokyo_tm_info w-full h-auto clear-both float-left">
+                    <div class="float-left clear-both w-full h-auto tokyo_tm_info">
                         <ul class="m-0 list-none">
                             <li class="m-0"><span class="min-w-[100px] float-left mr-[10px] font-bold text-black">Age:</span><span>32</span></li>
                             <li class="m-0"><span class="min-w-[100px] float-left mr-[10px] font-bold text-black">Address:</span><span>Dothan, AL</span></li>
@@ -40,124 +40,33 @@
                     </div>
                 </div>
             </div>
-            <div class="tokyo_tm_button" data-position="left">
-                <a href="assets/img/cv/1.jpg" download>
+            <div>
+                <a class="px-5 py-3 text-black bg-white" href="../assets/Resume2022.pdf" target="_blank">
                     <span>Resume</span>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="tokyo_tm_resumebox w-full h-auto clear-both float-left bg-white py-[93px] px-0">
-        <div class="container">
-            <div class="in w-full h-auto clear-both float-left flex">
-                <div class="left w-1/2 pr-[50px]">
-                    <div class="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-                        <h3 class="text-[20px] font-bold">Education</h3>
-                    </div>
-                    <div class="tokyo_tm_resume_list w-full h-auto clear-both float-left">
-                        <ul class="m-0 list-none relative inline-block pt-[10px]">
-                            <li class="m-0 w-full float-left relative pl-[20px] pb-[45px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2014 - 2016</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">Oxford Univercity</h3>
-                                        <span class="text-[14px]">Master Degree</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="m-0 w-full float-left relative pl-[20px] pb-[45px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2010 - 2014</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">Texas Univercity</h3>
-                                        <span class="text-[14px]">Bachelor Degree</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="m-0 w-full float-left relative pl-[20px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2008 - 2010</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">Simone College</h3>
-                                        <span class="text-[14px]">Associate Degree</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right w-1/2 pl-[50px]">
-                    <div class="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-                        <h3 class="text-[20px] font-bold">Experience</h3>
-                    </div>
-                    <div class="tokyo_tm_resume_list w-full h-auto clear-both float-left">
-                        <ul class="m-0 list-none relative inline-block pt-[10px]">
-                            <li class="m-0 w-full float-left relative pl-[20px] pb-[45px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2018 - Now</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">Envato Market</h3>
-                                        <span class="text-[14px]">Exclusive Author</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="m-0 w-full float-left relative pl-[20px] pb-[45px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2016 - 2018</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">RGB Studio</h3>
-                                        <span class="text-[14px]">UX Designer</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="m-0 w-full float-left relative pl-[20px]">
-                                <div class="list_inner  w-full h-auto clear-both float-left relative flex">
-                                    <div class="time w-1/2 pr-[20px]">
-                                        <span class="inline-block py-[5px] px-[25px] bg-[rgba(0,0,0,.05)] rounded-[50px] text-[14px] whitespace-nowrap">2012 - 2016</span>
-                                    </div>
-                                    <div class="place w-1/2 pl-[20px]">
-                                        <h3 class="text-[16px] mb-[2px] font-semibold">Innovations Park</h3>
-                                        <span class="text-[14px]">Web Designer</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="tokyo_tm_skillbox w-full h-auto clear-both float-left pt-[90px] pr-[0px] pb-[90px] pl-[0px]">
         <div class="container">
-            <div class="in w-full h-auto clear-both float-left flex">
+            <div class="flex float-left clear-both w-full h-auto in">
                 <div class="left w-1/2 pr-[50px]">
                     <div class="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
                         <h3 class="text-[20px] font-bold">Knowledge</h3>
                     </div>
-                    <div class="tokyo_tm_skill_list w-full h-auto clear-both ">
+                    <div class="clear-both w-full h-auto tokyo_tm_skill_list ">
                         <ul class="m-0 list-none">
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>HTML, CSS</span>
                             </li>
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>PHP, JavaScript</span>
                             </li>
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>Vue, Livewire, Laravel</span>
                             </li>
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>Bootstrap, Tailwind</span>
                             </li>
                         </ul>
@@ -167,21 +76,21 @@
                     <div class="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
                         <h3 class="text-[20px] font-bold">Interests</h3>
                     </div>
-                    <div class="tokyo_tm_skill_list w-full h-auto clear-both float-left">
+                    <div class="float-left clear-both w-full h-auto tokyo_tm_skill_list">
                         <ul class="m-0 list-none">
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                                 <span class="text-white mr-[8px]">▶</span><span>Continuous Learning</span>
                             </li>
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>Creating Web Apps</span>
                             </li>
-                            <li class="m-0 relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>App Optimization</span>
                             </li>
-                            <li class="m-0  relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>Enterprise Software</span>
                             </li>
-                            <li class="m-0 relative">
+                            <li class="relative m-0">
                             <span class="text-white mr-[8px]">▶</span><span>Contributing to open source</span>
                             </li>
                         </ul>

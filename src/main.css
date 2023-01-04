@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.logo {
+    font-family: 'Marck Script', cursive;
+}
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  
+  html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+  }
 
 @layer components{
     ul,li{
@@ -10,7 +34,7 @@
         @apply no-underline;
     }
     html{
-        @apply overflow-x-hidden p-0 m-0;
+        @apply p-0 m-0 overflow-x-hidden;
     }
     body{
         @apply overflow-x-hidden w-full font-mulish text-[15px] leading-[30px] tracking-[0px] font-normal bg-white text-[#767676];
@@ -56,13 +80,13 @@
         @apply box-border;
     }
     .tokyo_tm_button{
-        @apply w-full h-auto clear-both float-left;
+        @apply float-left clear-both w-full h-auto;
     }
     .tokyo_tm_button a{
         @apply text-white inline-block bg-black pt-[9px] pr-[40px] pb-[14px] pl-[40px] transition-all duration-300;
     }
     .tokyo_progress{
-        @apply w-full h-auto clear-both float-left;
+        @apply float-left clear-both w-full h-auto;
     }
     .progress_inner{
         @apply w-full mb-[17px];
@@ -80,13 +104,13 @@
         @apply bg-[rgba(0,0,0,.09)] w-full min-w-full relative h-[3px];
     }
     .progress_inner .background .bar_in{
-        @apply bg-black overflow-hidden absolute left-0 top-0 bottom-0;
+        @apply absolute top-0 bottom-0 left-0 overflow-hidden bg-black;
     }
     .progress_inner .background .bar{
         @apply relative w-full h-full;
     }
     .tokyo_tm_read_more{
-        @apply w-full h-auto clear-both float-left relative overflow-hidden;
+        @apply relative float-left clear-both w-full h-auto overflow-hidden;
     }
     .tokyo_tm_read_more a{
         @apply inline-block overflow-hidden text-black pr-[32px] relative uppercase font-medium text-[12px] font-montserrat;
@@ -104,7 +128,7 @@
         @apply relative min-w-full opacity-0;
     }
     .tokyo_tm_modalbox .service_popup_informations .image .main{
-        @apply absolute inset-0 bg-center bg-cover bg-no-repeat;
+        @apply absolute inset-0 bg-center bg-no-repeat bg-cover;
     }
     .tokyo_tm_modalbox .service_popup_informations .main_title{
         @apply w-full float-left mb-[23px];
@@ -119,7 +143,7 @@
         @apply fixed top-0 left-0 right-0 h-[100vh] z-[15] bg-[rgba(0,0,0,.8)] opacity-0 invisible transition-all duration-300;
     }
     .tokyo_tm_modalbox.opened{
-        @apply opacity-100 visible;
+        @apply visible opacity-100;
     }
     .tokyo_tm_modalbox .container{
         @apply h-[100vh];
@@ -177,7 +201,7 @@
         @apply relative min-w-full opacity-0;
     }
     .tokyo_tm_modalbox .popup_details .top_image .main{
-        @apply absolute inset-0 bg-no-repeat bg-cover bg-center;
+        @apply absolute inset-0 bg-center bg-no-repeat bg-cover;
     }
     .tokyo_tm_modalbox .portfolio_main_title{
         @apply w-full float-left mb-[28px];
@@ -189,7 +213,7 @@
         @apply opacity-0 invisible absolute z-[-111] hidden;
     }
     .tokyo_tm_modalbox .popup_details{
-        @apply w-full h-auto clear-both float-left;
+        @apply float-left clear-both w-full h-auto;
     }
     .tokyo_tm_modalbox .additional_images ul li:nth-child(3n-2){
         @apply w-full;
@@ -216,7 +240,7 @@
         @apply min-w-full;
     }
     .tokyo_tm_modalbox .description_wrap .image .main{
-        @apply absolute inset-0 bg-no-repeat bg-cover bg-center;
+        @apply absolute inset-0 bg-center bg-no-repeat bg-cover;
     }
     .tokyo_tm_modalbox .details .title{
         @apply font-semibold text-[23px] mb-[9px];
@@ -742,7 +766,7 @@
         @apply border-[rgba(255,255,255,.2)];
     }
     body.dark .tokyo_tm_pricing .popular{
-        @apply bg-white text-black;
+        @apply text-black bg-white;
     }
     body.dark .tokyo_tm_pricing .plan h3{
         @apply border-[rgba(255,255,255,.1);]
